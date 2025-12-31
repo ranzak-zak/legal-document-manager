@@ -1,0 +1,34 @@
+{
+  "name": "legal-document-manager",
+  "version": "1.0.0",
+  "type": "custom-addon-module",
+  "description": "Document management and analysis system for legal professionals",
+  "author": "Legal Tech Team",
+  "capabilities": {
+    "document_upload": {
+      "description": "Upload single or multiple documents",
+      "supported_formats": ["pdf", "docx", "doc", "txt", "rtf", "jpg", "png", "gif", "mp3", "wav", "mp4", "avi", "pptx", "ppt"]
+    },
+    "document_analysis": {
+      "description": "Analyze documents using AI for legal insights"
+    },
+    "document_creation": {
+      "description": "Create new legal documents from templates"
+    },
+    "case_management": {
+      "description": "Organize documents into legal case folders"
+    },
+    "file_management": {
+      "description": "Manage files and folder structure"
+    },
+    "chat_context": {
+      "description": "Maintain chat context with document references"
+    }
+  },
+  "dependencies": [],
+  "config": {
+    "server_storage": true,
+    "max_file_size_mb": 500,
+    "concurrent_uploads": 5
+  }
+}
